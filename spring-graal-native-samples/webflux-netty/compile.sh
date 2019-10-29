@@ -22,6 +22,7 @@ export CP=$CP:../../../../../spring-graal-native-feature/target/spring-graal-nat
 
 printf "\n\nCompile\n"
 native-image \
+  --verbose \
   --no-server \
   -H:+TraceClassInitialization \
   -H:Name=webflux-netty \
@@ -29,6 +30,7 @@ native-image \
   --no-fallback \
   --allow-incomplete-classpath \
   --report-unsupported-elements-at-runtime \
+  --initialize-at-run-time=io.netty.handler.codec.http.websocketx.extensions.compression.DeflateDecoder,reactor.netty.tcp.TcpServer,org.springframework.boot.ImageBanner \
  -DremoveUnusedAutoconfig=true \
   -cp $CP com.example.demo.DemoApplication
 
