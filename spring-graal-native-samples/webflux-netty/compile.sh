@@ -31,7 +31,7 @@ native-image \
   --allow-incomplete-classpath \
   --report-unsupported-elements-at-runtime \
   --initialize-at-run-time=io.netty.handler.codec.http.websocketx.extensions.compression.DeflateDecoder,reactor.netty.tcp.TcpServer,org.springframework.boot.ImageBanner \
- -DremoveUnusedAutoconfig=true \
+  -DremoveUnusedAutoconfig=true \
   -cp $CP com.example.demo.DemoApplication
 
 mv webflux-netty ../../..

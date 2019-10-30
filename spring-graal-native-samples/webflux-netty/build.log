@@ -1,0 +1,1033 @@
+/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:webflux-netty >----------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ webflux-netty ---
+[INFO] Deleting /Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ webflux-netty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ webflux-netty ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ webflux-netty ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ webflux-netty ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ webflux-netty ---
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ webflux-netty ---
+[INFO] Building jar: /Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/target/webflux-netty-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.0.RELEASE:repackage (repackage) @ webflux-netty ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ webflux-netty ---
+[INFO] Installing /Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/target/webflux-netty-0.0.1-SNAPSHOT.jar to /Users/eginez/.m2/repository/com/example/webflux-netty/0.0.1-SNAPSHOT/webflux-netty-0.0.1-SNAPSHOT.jar
+[INFO] Installing /Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/pom.xml to /Users/eginez/.m2/repository/com/example/webflux-netty/0.0.1-SNAPSHOT/webflux-netty-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.878 s
+[INFO] Finished at: 2019-10-29T16:36:14-07:00
+[INFO] ------------------------------------------------------------------------
+rm: webflux-netty: No such file or directory
+Unpacking webflux-netty-0.0.1-SNAPSHOT.jar
+
+Compile
+Warning: Ignoring server-mode native-image argument --no-server.
+Apply jar:file:///Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-buffer-4.1.42.Final.jar!/META-INF/native-image/io.netty/buffer/native-image.properties
+Apply jar:file:///Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-codec-http-4.1.42.Final.jar!/META-INF/native-image/io.netty/codec-http/native-image.properties
+Apply jar:file:///Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-common-4.1.42.Final.jar!/META-INF/native-image/io.netty/common/native-image.properties
+Apply jar:file:///Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-handler-4.1.42.Final.jar!/META-INF/native-image/io.netty/handler/native-image.properties
+Apply jar:file:///Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-transport-4.1.42.Final.jar!/META-INF/native-image/io.netty/transport/native-image.properties
+Executing [
+/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/bin/java \
+-XX:+UnlockExperimentalVMOptions \
+-XX:+EnableJVMCI \
+-Dtruffle.TrustAllTruffleRuntimeProviders=true \
+-Dtruffle.TruffleRuntime=com.oracle.truffle.api.impl.DefaultTruffleRuntime \
+-Dgraalvm.ForcePolyglotInvalid=true \
+-Dgraalvm.locatorDisabled=true \
+-Dsubstratevm.IgnoreGraalVersionCheck=true \
+-Djava.lang.invoke.stringConcat=BC_SB \
+--add-exports \
+jdk.internal.vm.ci/jdk.vm.ci.runtime=ALL-UNNAMED \
+--add-exports \
+jdk.internal.vm.ci/jdk.vm.ci.code=ALL-UNNAMED \
+--add-exports \
+jdk.internal.vm.ci/jdk.vm.ci.aarch64=ALL-UNNAMED \
+--add-exports \
+jdk.internal.vm.ci/jdk.vm.ci.amd64=ALL-UNNAMED \
+--add-exports \
+jdk.internal.vm.ci/jdk.vm.ci.meta=ALL-UNNAMED \
+--add-exports \
+jdk.internal.vm.ci/jdk.vm.ci.hotspot=ALL-UNNAMED \
+--add-exports \
+jdk.internal.vm.ci/jdk.vm.ci.services=ALL-UNNAMED \
+--add-exports \
+jdk.internal.vm.ci/jdk.vm.ci.common=ALL-UNNAMED \
+--add-exports \
+jdk.internal.vm.ci/jdk.vm.ci.code.site=ALL-UNNAMED \
+--add-exports \
+jdk.internal.vm.ci/jdk.vm.ci.code.stack=ALL-UNNAMED \
+--add-opens \
+jdk.internal.vm.compiler/org.graalvm.compiler.debug=ALL-UNNAMED \
+--add-opens \
+jdk.internal.vm.compiler/org.graalvm.compiler.nodes=ALL-UNNAMED \
+--add-opens \
+jdk.unsupported/sun.reflect=ALL-UNNAMED \
+--add-opens \
+java.base/jdk.internal.module=ALL-UNNAMED \
+--add-opens \
+java.base/jdk.internal.ref=ALL-UNNAMED \
+--add-opens \
+java.base/jdk.internal.reflect=ALL-UNNAMED \
+--add-opens \
+java.base/java.io=ALL-UNNAMED \
+--add-opens \
+java.base/java.lang=ALL-UNNAMED \
+--add-opens \
+java.base/java.lang.reflect=ALL-UNNAMED \
+--add-opens \
+java.base/java.lang.invoke=ALL-UNNAMED \
+--add-opens \
+java.base/java.lang.ref=ALL-UNNAMED \
+--add-opens \
+java.base/java.net=ALL-UNNAMED \
+--add-opens \
+java.base/java.nio=ALL-UNNAMED \
+--add-opens \
+java.base/java.nio.file=ALL-UNNAMED \
+--add-opens \
+java.base/java.security=ALL-UNNAMED \
+--add-opens \
+java.base/javax.crypto=ALL-UNNAMED \
+--add-opens \
+java.base/java.util=ALL-UNNAMED \
+--add-opens \
+java.base/java.util.concurrent.atomic=ALL-UNNAMED \
+--add-opens \
+java.base/sun.security.x509=ALL-UNNAMED \
+--add-opens \
+java.base/jdk.internal.logger=ALL-UNNAMED \
+--add-opens \
+org.graalvm.sdk/org.graalvm.nativeimage.impl=ALL-UNNAMED \
+--add-opens \
+org.graalvm.sdk/org.graalvm.polyglot=ALL-UNNAMED \
+--add-opens \
+org.graalvm.truffle/com.oracle.truffle.polyglot=ALL-UNNAMED \
+--add-opens \
+org.graalvm.truffle/com.oracle.truffle.api.impl=ALL-UNNAMED \
+-XX:-UseJVMCICompiler \
+-Xss10m \
+-Xms1g \
+-Xmx13743895344 \
+-Duser.country=US \
+-Duser.language=en \
+-Dorg.graalvm.version=dev \
+-Dorg.graalvm.config= \
+-Dcom.oracle.graalvm.isaot=true \
+--module-path \
+/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/truffle/truffle-api.jar \
+-javaagent:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/svm.jar=traceInitialization \
+-Djdk.internal.lambda.eagerlyInitialize=false \
+-Djava.lang.invoke.InnerClassLambdaMetafactory.initializeLambdas=false \
+-DremoveUnusedAutoconfig=true \
+-cp \
+/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/graal-llvm.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/javacpp.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/llvm-platform-specific.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/llvm-wrapper.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/objectfile.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/pointsto.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/svm-enterprise-llvm.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/svm-enterprise.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/svm-llvm.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/svm.jar \
+com.oracle.svm.hosted.NativeImageGeneratorRunner$JDK9Plus \
+-imagecp \
+/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/graal-llvm.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/javacpp.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/llvm-platform-specific.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/llvm-wrapper.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/objectfile.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/pointsto.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/svm-enterprise-llvm.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/svm-enterprise.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/svm-llvm.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/builder/svm.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/library-support-enterprise.jar:/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/library-support.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/classes:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/jackson-annotations-2.10.0.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/jackson-core-2.10.0.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/jackson-databind-2.10.0.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/jackson-datatype-jdk8-2.10.0.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/jackson-datatype-jsr310-2.10.0.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/jackson-module-parameter-names-2.10.0.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/jakarta.annotation-api-1.3.5.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/jakarta.el-3.0.3.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/jul-to-slf4j-1.7.28.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/log4j-api-2.12.1.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/log4j-to-slf4j-2.12.1.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/logback-classic-1.2.3.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/logback-core-1.2.3.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-buffer-4.1.42.Final.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-codec-4.1.42.Final.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-codec-http-4.1.42.Final.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-codec-socks-4.1.42.Final.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-common-4.1.42.Final.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-handler-4.1.42.Final.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-handler-proxy-4.1.42.Final.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-resolver-4.1.42.Final.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/netty-transport-4.1.42.Final.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/nio-multipart-parser-1.1.0.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/nio-stream-storage-1.1.3.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/reactive-streams-1.0.3.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/reactor-core-3.3.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/reactor-netty-0.9.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/reactor-pool-0.1.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/slf4j-api-1.7.28.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/snakeyaml-1.25.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-aop-5.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-beans-5.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-boot-2.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-boot-autoconfigure-2.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-boot-starter-2.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-boot-starter-json-2.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-boot-starter-logging-2.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-boot-starter-reactor-netty-2.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-boot-starter-validation-2.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-boot-starter-webflux-2.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-context-5.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-core-5.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-expression-5.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-jcl-5.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-web-5.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/lib/spring-webflux-5.2.0.RELEASE.jar:/Users/eginez/src/spring-graal-native/spring-graal-native-feature/target/spring-graal-native-feature-0.6.0.BUILD-SNAPSHOT.jar \
+-H:Path=/Users/eginez/src/spring-graal-native/spring-graal-native-samples/webflux-netty/unpack/BOOT-INF/classes \
+-H:+TraceClassInitialization \
+-H:Name=webflux-netty \
+-H:+ReportExceptionStackTraces \
+-H:FallbackThreshold=0 \
+-H:+AllowIncompleteClasspath \
+-H:+ReportUnsupportedElementsAtRuntime \
+-H:ClassInitialization=io.netty.handler.codec.http.websocketx.extensions.compression.DeflateDecoder:run_time,reactor.netty.tcp.TcpServer:run_time,org.springframework.boot.ImageBanner:run_time \
+-H:ClassInitialization=io.netty.buffer.PooledByteBufAllocator:run_time,io.netty.buffer.ByteBufAllocator:run_time,io.netty.buffer.ByteBufUtil:run_time,io.netty.buffer.AbstractReferenceCountedByteBuf:run_time \
+-H:ClassInitialization=io.netty:build_time \
+-H:ClassInitialization=io.netty.handler.codec.http.HttpObjectEncoder:run_time,io.netty.handler.codec.http.websocketx.WebSocket00FrameEncoder:run_time \
+-H:ClassInitialization=io.netty.util.AbstractReferenceCounted:run_time \
+-H:ClassInitialization=io.netty.handler.ssl.util.ThreadLocalInsecureRandom:run_time \
+-H:ReflectionConfigurationResources=META-INF/native-image/io.netty/transport/reflection-config.json \
+-H:CLibraryPath=/Users/eginez/src/graal/sdk/mxbuild/darwin-amd64/GRAALVM_LIBGRAAL_EE_JAVA11_BNATIVE-IMAGE_BNATIVE-IMAGE-CONFIGURE_LIBPOLY_NI_NIC_NIEE_NIL_NJU_SJVMCICOMPILER_SNATIVE-IMAGE-AGENT/graalvm-libgraal-ee-java11-20.0.0-dev/Contents/Home/lib/svm/clibraries/darwin-amd64 \
+-H:Class=com.example.demo.DemoApplication
+]
+[webflux-netty:57034]    classlist:  20,931.27 ms
+ ____             _               _____          _                  
+/ ___| _ __  _ __(_)_ __   __ _  |  ___|__  __ _| |_ _   _ _ __ ___ 
+\___ \| '_ \| '__| | '_ \ / _` | | |_ / _ \/ _` | __| | | | '__/ _ \
+ ___) | |_) | |  | | | | | (_| | |  _|  __/ (_| | |_| |_| | | |  __/
+|____/| .__/|_|  |_|_| |_|\__, | |_|  \___|\__,_|\__|\__,_|_|  \___|
+      |_|                 |___/                                     
+
+Use -Dverbose=true on native-image call to see more detailed information from the feature
+Remove unused config = true
+[webflux-netty:57034]        (cap):   2,452.31 ms
+Found #381 types in static reflection list to register
+Skipping #209 types not on the classpath
+Attempting proxy registration of #22 proxies
+Skipped registration of #12 proxies - relevant types not on classpath
+[webflux-netty:57034]        setup:  10,451.05 ms
+Registering resources - #60 patterns
+Processing META-INF/spring.factories files...
+Adding all the classes for this key: org.springframework.beans.BeanInfoFactory
+Adding all the classes for this key: org.springframework.boot.diagnostics.FailureAnalysisReporter
+Adding all the classes for this key: org.springframework.boot.diagnostics.FailureAnalyzer
+Adding all the classes for this key: org.springframework.boot.SpringBootExceptionReporter
+Adding all the classes for this key: org.springframework.boot.SpringApplicationRunListener
+Adding all the classes for this key: org.springframework.context.ApplicationListener
+Adding all the classes for this key: org.springframework.boot.env.PropertySourceLoader
+Adding all the classes for this key: org.springframework.context.ApplicationContextInitializer
+Adding all the classes for this key: org.springframework.boot.env.EnvironmentPostProcessor
+Adding all the classes for this key: org.springframework.boot.autoconfigure.AutoConfigurationImportListener
+Adding all the classes for this key: org.springframework.boot.autoconfigure.AutoConfigurationImportFilter
+Adding all the classes for this key: org.springframework.boot.autoconfigure.EnableAutoConfiguration
+Adding all the classes for this key: org.springframework.boot.diagnostics.FailureAnalyzer
+Adding all the classes for this key: org.springframework.context.ApplicationListener
+Adding all the classes for this key: org.springframework.boot.autoconfigure.template.TemplateAvailabilityProvider
+Adding all the classes for this key: org.springframework.context.ApplicationContextInitializer
+Processing spring.factories - EnableAutoConfiguration lists #124 configurations
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method springApplicationAdminRegistrar(Lorg/springframework/beans/factory/ObjectProvider;Lorg/springframework/core/env/Environment;)Lorg/springframework/boot/admin/SpringApplicationAdminMXBeanRegistrar;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/cache/CacheAutoConfiguration = 1 (total methods including @Bean ones:3)
+> Hints on method cacheManagerCustomizers(Lorg/springframework/beans/factory/ObjectProvider;)Lorg/springframework/boot/autoconfigure/cache/CacheManagerCustomizers;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+> Hints on method cacheAutoConfigurationValidator(Lorg/springframework/boot/autoconfigure/cache/CacheProperties;Lorg/springframework/beans/factory/ObjectProvider;)Lorg/springframework/boot/autoconfigure/cache/CacheAutoConfiguration$CacheManagerValidator;:
+[]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/context/ConfigurationPropertiesAutoConfiguration = 1 (total methods including @Bean ones:1)
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/context/MessageSourceAutoConfiguration = 3 (total methods including @Bean ones:5)
+> Hints on method messageSourceProperties()Lorg/springframework/boot/autoconfigure/context/MessageSourceProperties;:
+[]
+> Hints on method messageSource(Lorg/springframework/boot/autoconfigure/context/MessageSourceProperties;)Lorg/springframework/context/MessageSource;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method propertySourcesPlaceholderConfigurer()Lorg/springframework/context/support/PropertySourcesPlaceholderConfigurer;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/http/HttpMessageConvertersAutoConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method messageConverters(Lorg/springframework/beans/factory/ObjectProvider;)Lorg/springframework/boot/autoconfigure/http/HttpMessageConverters;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/http/JacksonHttpMessageConvertersConfiguration = 1 (total methods including @Bean ones:1)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/http/JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method mappingJackson2HttpMessageConverter(Lcom/fasterxml/jackson/databind/ObjectMapper;)Lorg/springframework/http/converter/json/MappingJackson2HttpMessageConverter;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[oshcj.MappingJackson2HttpMessageConverter:EXISTENCE_CHECK]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/http/HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method stringHttpMessageConverter(Lorg/springframework/boot/autoconfigure/http/HttpProperties;)Lorg/springframework/http/converter/StringHttpMessageConverter;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/http/codec/CodecsAutoConfiguration = 3 (total methods including @Bean ones:3)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/http/codec/CodecsAutoConfiguration$LoggingCodecConfiguration = 2 (total methods including @Bean ones:3)
+> Hints on method loggingCodecCustomizer(Lorg/springframework/boot/autoconfigure/http/HttpProperties;)Lorg/springframework/boot/web/codec/CodecCustomizer;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/http/codec/CodecsAutoConfiguration$JacksonCodecConfiguration = 2 (total methods including @Bean ones:3)
+> Hints on method jacksonCodecCustomizer(Lcom/fasterxml/jackson/databind/ObjectMapper;)Lorg/springframework/boot/web/codec/CodecCustomizer;:
+[Hint{[osbac.ConditionalOnBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/info/ProjectInfoAutoConfiguration = 3 (total methods including @Bean ones:5)
+> Hints on method gitProperties()Lorg/springframework/boot/info/GitProperties;:
+[Hint{[osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbai.ProjectInfoAutoConfiguration$GitResourceAvailableCondition:ALL]}, Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+> Hints on method buildProperties()Lorg/springframework/boot/info/BuildProperties;:
+[Hint{[osbac.ConditionalOnResource,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnResourceCondition:ALL]}, Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration = 3 (total methods including @Bean ones:4)
+> Hints on method jsonComponentModule()Lorg/springframework/boot/jackson/JsonComponentModule;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method standardJacksonObjectMapperBuilderCustomizer(Lorg/springframework/context/ApplicationContext;Lorg/springframework/boot/autoconfigure/jackson/JacksonProperties;)Lorg/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration = 2 (total methods including @Bean ones:3)
+> Hints on method jacksonObjectMapperBuilder(Lorg/springframework/context/ApplicationContext;Ljava/util/List;)Lorg/springframework/http/converter/json/Jackson2ObjectMapperBuilder;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$ParameterNamesModuleConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method parameterNamesModule()Lcom/fasterxml/jackson/module/paramnames/ParameterNamesModule;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration$JacksonObjectMapperConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method jacksonObjectMapper(Lorg/springframework/http/converter/json/Jackson2ObjectMapperBuilder;)Lcom/fasterxml/jackson/databind/ObjectMapper;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jdbc/DataSourceAutoConfiguration = 1 (total methods including @Bean ones:1)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jdbc/metadata/DataSourcePoolMetadataProvidersConfiguration = 1 (total methods including @Bean ones:1)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jdbc/DataSourceInitializationConfiguration = 1 (total methods including @Bean ones:1)
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jdbc/DataSourceAutoConfiguration$PooledDataSourceConfiguration = 1 (total methods including @Bean ones:1)
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Generic = 1 (total methods including @Bean ones:2)
+> Hints on method dataSource(Lorg/springframework/boot/autoconfigure/jdbc/DataSourceProperties;)Ljavax/sql/DataSource;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jdbc/DataSourceJmxConfiguration = 3 (total methods including @Bean ones:3)
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jdbc/DataSourceAutoConfiguration$EmbeddedDatabaseConfiguration = 1 (total methods including @Bean ones:1)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jdbc/EmbeddedDataSourceConfiguration = 2 (total methods including @Bean ones:3)
+> Hints on method dataSource(Lorg/springframework/boot/autoconfigure/jdbc/DataSourceProperties;)Lorg/springframework/jdbc/datasource/embedded/EmbeddedDatabase;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jdbc/JndiDataSourceAutoConfiguration = 2 (total methods including @Bean ones:3)
+> Hints on method dataSource(Lorg/springframework/boot/autoconfigure/jdbc/DataSourceProperties;Lorg/springframework/context/ApplicationContext;)Ljavax/sql/DataSource;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/jmx/JmxAutoConfiguration = 1 (total methods including @Bean ones:4)
+> Hints on method mbeanExporter(Lorg/springframework/jmx/export/naming/ObjectNamingStrategy;Lorg/springframework/beans/factory/BeanFactory;)Lorg/springframework/jmx/export/annotation/AnnotationMBeanExporter;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[osje.MBeanExporter:EXISTENCE_CHECK]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+> Hints on method objectNamingStrategy()Lorg/springframework/boot/autoconfigure/jmx/ParentAwareNamingStrategy;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[osjen.ObjectNamingStrategy:EXISTENCE_CHECK]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+> Hints on method mbeanServer()Ljavax/management/MBeanServer;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/mail/MailSenderValidatorAutoConfiguration = 2 (total methods including @Bean ones:2)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/security/oauth2/resource/servlet/OAuth2ResourceServerAutoConfiguration = 1 (total methods including @Bean ones:1)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/task/TaskExecutionAutoConfiguration = 1 (total methods including @Bean ones:3)
+> Hints on method taskExecutorBuilder(Lorg/springframework/boot/autoconfigure/task/TaskExecutionProperties;Lorg/springframework/beans/factory/ObjectProvider;Lorg/springframework/beans/factory/ObjectProvider;)Lorg/springframework/boot/task/TaskExecutorBuilder;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+> Hints on method applicationTaskExecutor(Lorg/springframework/boot/task/TaskExecutorBuilder;)Lorg/springframework/scheduling/concurrent/ThreadPoolTaskExecutor;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[juc.Executor:EXISTENCE_CHECK]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/task/TaskSchedulingAutoConfiguration = 1 (total methods including @Bean ones:3)
+> Hints on method taskScheduler(Lorg/springframework/boot/task/TaskSchedulerBuilder;)Lorg/springframework/scheduling/concurrent/ThreadPoolTaskScheduler;:
+[Hint{[osbac.ConditionalOnBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}, Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[ossa.SchedulingConfigurer:EXISTENCE_CHECK,juc.ScheduledExecutorService:EXISTENCE_CHECK,oss.TaskScheduler:EXISTENCE_CHECK]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+> Hints on method taskSchedulerBuilder(Lorg/springframework/boot/autoconfigure/task/TaskSchedulingProperties;Lorg/springframework/beans/factory/ObjectProvider;)Lorg/springframework/boot/task/TaskSchedulerBuilder;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/client/RestTemplateAutoConfiguration = 2 (total methods including @Bean ones:3)
+> Hints on method restTemplateBuilder(Lorg/springframework/beans/factory/ObjectProvider;Lorg/springframework/beans/factory/ObjectProvider;Lorg/springframework/beans/factory/ObjectProvider;)Lorg/springframework/boot/web/client/RestTemplateBuilder;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/embedded/EmbeddedWebServerFactoryCustomizerAutoConfiguration = 1 (total methods including @Bean ones:1)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/embedded/EmbeddedWebServerFactoryCustomizerAutoConfiguration$NettyWebServerFactoryCustomizerConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method nettyWebServerFactoryCustomizer(Lorg/springframework/core/env/Environment;Lorg/springframework/boot/autoconfigure/web/ServerProperties;)Lorg/springframework/boot/autoconfigure/web/embedded/NettyWebServerFactoryCustomizer;:
+[]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/HttpHandlerAutoConfiguration = 1 (total methods including @Bean ones:1)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/HttpHandlerAutoConfiguration$AnnotationConfig = 1 (total methods including @Bean ones:2)
+> Hints on method httpHandler()Lorg/springframework/http/server/reactive/HttpHandler;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/ReactiveWebServerFactoryAutoConfiguration = 1 (total methods including @Bean ones:4)
+> Hints on method reactiveWebServerFactoryCustomizer(Lorg/springframework/boot/autoconfigure/web/ServerProperties;)Lorg/springframework/boot/autoconfigure/web/reactive/ReactiveWebServerFactoryCustomizer;:
+[]
+> Hints on method tomcatReactiveWebServerFactoryCustomizer(Lorg/springframework/boot/autoconfigure/web/ServerProperties;)Lorg/springframework/boot/autoconfigure/web/reactive/TomcatReactiveWebServerFactoryCustomizer;:
+[Hint{[osbac.ConditionalOnClass],skipIfTypesMissing=true,follow=false,specificTypes=[],inferredTypes=[]}, Hint{[osbac.ConditionalOnClass,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnClassCondition:ALL]}]
+> Hints on method forwardedHeaderTransformer()Lorg/springframework/web/server/adapter/ForwardedHeaderTransformer;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}, Hint{[osbac.ConditionalOnProperty,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnPropertyCondition:ALL]}]
+
+
+
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/ReactiveWebServerFactoryConfiguration$EmbeddedNetty = 2 (total methods including @Bean ones:4)
+> Hints on method reactorServerResourceFactory()Lorg/springframework/http/client/reactive/ReactorResourceFactory;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+> Hints on method nettyReactiveWebServerFactory(Lorg/springframework/http/client/reactive/ReactorResourceFactory;Lorg/springframework/beans/factory/ObjectProvider;Lorg/springframework/beans/factory/ObjectProvider;)Lorg/springframework/boot/web/embedded/netty/NettyReactiveWebServerFactory;:
+[]
+
+
+
+
+
+
+
+
+
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method hiddenHttpMethodFilter()Lorg/springframework/boot/web/reactive/filter/OrderedHiddenHttpMethodFilter;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[oswfr.HiddenHttpMethodFilter:EXISTENCE_CHECK]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}, Hint{[osbac.ConditionalOnProperty,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnPropertyCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$ResourceChainCustomizerConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method resourceHandlerRegistrationCustomizer()Lorg/springframework/boot/autoconfigure/web/reactive/ResourceChainResourceHandlerRegistrationCustomizer;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration = 3 (total methods including @Bean ones:5)
+> Hints on method webFluxConversionService()Lorg/springframework/format/support/FormattingConversionService;:
+[]
+> Hints on method webFluxValidator()Lorg/springframework/validation/Validator;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/web/reactive/config/DelegatingWebFluxConfiguration = 12 (total methods including @Bean ones:12)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$WebFluxConfig = 11 (total methods including @Bean ones:11)
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/WebFluxAutoConfiguration$EnableWebFluxConfiguration = 3 (total methods including @Bean ones:5)
+> Hints on method webFluxConversionService()Lorg/springframework/format/support/FormattingConversionService;:
+[]
+> Hints on method webFluxValidator()Lorg/springframework/validation/Validator;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/error/ErrorWebFluxAutoConfiguration = 1 (total methods including @Bean ones:3)
+> Hints on method errorWebExceptionHandler(Lorg/springframework/boot/web/reactive/error/ErrorAttributes;Lorg/springframework/boot/autoconfigure/web/ResourceProperties;Lorg/springframework/beans/factory/ObjectProvider;Lorg/springframework/http/codec/ServerCodecConfigurer;Lorg/springframework/context/ApplicationContext;)Lorg/springframework/boot/web/reactive/error/ErrorWebExceptionHandler;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[osbwre.ErrorWebExceptionHandler:EXISTENCE_CHECK]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+> Hints on method errorAttributes()Lorg/springframework/boot/web/reactive/error/DefaultErrorAttributes;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[osbwre.ErrorAttributes:EXISTENCE_CHECK]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/function/client/ClientHttpConnectorAutoConfiguration = 2 (total methods including @Bean ones:3)
+> Hints on method clientConnectorCustomizer(Lorg/springframework/http/client/reactive/ClientHttpConnector;)Lorg/springframework/boot/web/reactive/function/client/WebClientCustomizer;:
+[Hint{[osbac.ConditionalOnBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/function/client/ClientHttpConnectorConfiguration$ReactorNetty = 1 (total methods including @Bean ones:3)
+> Hints on method reactorClientResourceFactory()Lorg/springframework/http/client/reactive/ReactorResourceFactory;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+> Hints on method reactorClientHttpConnector(Lorg/springframework/http/client/reactive/ReactorResourceFactory;)Lorg/springframework/http/client/reactive/ReactorClientHttpConnector;:
+[]
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/function/client/WebClientAutoConfiguration = 2 (total methods including @Bean ones:3)
+> Hints on method webClientBuilder()Lorg/springframework/web/reactive/function/client/WebClient$Builder;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/reactive/function/client/WebClientAutoConfiguration$WebClientCodecsConfiguration = 1 (total methods including @Bean ones:2)
+> Hints on method exchangeStrategiesCustomizer(Ljava/util/List;)Lorg/springframework/boot/autoconfigure/web/reactive/function/client/WebClientCodecCustomizer;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+Methods unnecessarily being exposed by reflection on this config type org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration = 1 (total methods including @Bean ones:3)
+> Hints on method characterEncodingFilter()Lorg/springframework/web/filter/CharacterEncodingFilter;:
+[Hint{[osbac.ConditionalOnMissingBean],skipIfTypesMissing=true,follow=false,specificTypes=[osbac.SearchStrategy:ALL],inferredTypes=[]}, Hint{[osbac.ConditionalOnMissingBean,osca.Conditional],skipIfTypesMissing=false,follow=false,specificTypes=[],inferredTypes=[osbac.OnBeanCondition:ALL]}]
+
+
+
+> Hints on method localeCharsetMappingsCustomizer()Lorg/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration$LocaleCharsetMappingsCustomizer;:
+[]
+Excluding 99 auto-configurations from spring.factories file
+Found no META-INF/spring.components -> synthesizing one...
+Computed spring.components is 
+vvv
+com.example.demo.Foobar=org.springframework.stereotype.Component
+com.example.demo.DemoApplication=org.springframework.stereotype.Component
+^^^
+Registered 2 entries
+Configuring initialization time for specific types and packages:
+#126 buildtime-init-classes   #33 buildtime-init-packages   #6 runtime-init-classes    #2 runtime-init-packages
+
+Warning: class initialization of class org.springframework.boot.validation.MessageInterpolatorFactory failed with exception java.lang.NoClassDefFoundError: javax/validation/ValidationException. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=org.springframework.boot.validation.MessageInterpolatorFactory to explicitly request delayed initialization of this class.
+Number of types dynamically registered for reflective access: #551
+16:36:58.429 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+16:36:58.443 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent - Platform: MacOS
+16:36:58.447 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+16:36:58.448 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 11
+16:36:58.449 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+16:36:58.450 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+16:36:58.450 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+16:36:58.452 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:224)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:218)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:272)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.ConstantPool.<init>(ConstantPool.java:32)
+	at io.netty.channel.ChannelOption$1.<init>(ChannelOption.java:35)
+	at io.netty.channel.ChannelOption.<clinit>(ChannelOption.java:35)
+	at reactor.netty.tcp.TcpClient.<clinit>(TcpClient.java:617)
+	at reactor.netty.http.client.HttpClient.<clinit>(HttpClient.java:940)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1042)
+	at jdk.unsupported/sun.misc.Unsafe.ensureClassInitialized(Unsafe.java:698)
+	at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.ensureClassInitialized(ConfigurableClassInitialization.java:167)
+	at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.computeInitKindAndMaybeInitializeClass(ConfigurableClassInitialization.java:560)
+	at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.computeInitKindAndMaybeInitializeClass(ConfigurableClassInitialization.java:130)
+	at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.maybeInitializeHosted(ConfigurableClassInitialization.java:158)
+	at com.oracle.svm.hosted.SVMHost.registerType(SVMHost.java:198)
+	at com.oracle.graal.pointsto.meta.AnalysisUniverse.createType(AnalysisUniverse.java:264)
+	at com.oracle.graal.pointsto.meta.AnalysisUniverse.lookupAllowUnresolved(AnalysisUniverse.java:205)
+	at com.oracle.graal.pointsto.meta.AnalysisUniverse.lookup(AnalysisUniverse.java:182)
+	at com.oracle.graal.pointsto.meta.AnalysisUniverse.lookup(AnalysisUniverse.java:75)
+	at com.oracle.graal.pointsto.infrastructure.UniverseMetaAccess$1.apply(UniverseMetaAccess.java:52)
+	at com.oracle.graal.pointsto.infrastructure.UniverseMetaAccess$1.apply(UniverseMetaAccess.java:49)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at com.oracle.graal.pointsto.infrastructure.UniverseMetaAccess.lookupJavaType(UniverseMetaAccess.java:84)
+	at com.oracle.graal.pointsto.meta.AnalysisMetaAccess.lookupJavaType(AnalysisMetaAccess.java:47)
+	at com.oracle.svm.hosted.ameta.HostedDynamicHubFeature.replace(HostedDynamicHubFeature.java:52)
+	at com.oracle.graal.pointsto.meta.AnalysisUniverse.replaceObject(AnalysisUniverse.java:534)
+	at com.oracle.svm.hosted.ameta.AnalysisConstantReflectionProvider.replaceObject(AnalysisConstantReflectionProvider.java:201)
+	at com.oracle.svm.hosted.ameta.AnalysisConstantReflectionProvider.interceptValue(AnalysisConstantReflectionProvider.java:172)
+	at com.oracle.svm.hosted.ameta.AnalysisConstantReflectionProvider.readValue(AnalysisConstantReflectionProvider.java:101)
+	at com.oracle.svm.hosted.ameta.AnalysisConstantReflectionProvider.readFieldValue(AnalysisConstantReflectionProvider.java:77)
+	at com.oracle.graal.pointsto.ObjectScanner.scanField(ObjectScanner.java:184)
+	at com.oracle.graal.pointsto.ObjectScanner.doScan(ObjectScanner.java:380)
+	at com.oracle.graal.pointsto.ObjectScanner.access$500(ObjectScanner.java:61)
+	at com.oracle.graal.pointsto.ObjectScanner$3$1.run(ObjectScanner.java:450)
+	at com.oracle.graal.pointsto.util.CompletionExecutor.lambda$execute$0(CompletionExecutor.java:171)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+16:36:58.454 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+16:36:58.456 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @77912e7
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:361)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:591)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:558)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:334)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:325)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:272)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.util.ConstantPool.<init>(ConstantPool.java:32)
+	at io.netty.channel.ChannelOption$1.<init>(ChannelOption.java:35)
+	at io.netty.channel.ChannelOption.<clinit>(ChannelOption.java:35)
+	at reactor.netty.tcp.TcpClient.<clinit>(TcpClient.java:617)
+	at reactor.netty.http.client.HttpClient.<clinit>(HttpClient.java:940)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1042)
+	at jdk.unsupported/sun.misc.Unsafe.ensureClassInitialized(Unsafe.java:698)
+	at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.ensureClassInitialized(ConfigurableClassInitialization.java:167)
+	at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.computeInitKindAndMaybeInitializeClass(ConfigurableClassInitialization.java:560)
+	at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.computeInitKindAndMaybeInitializeClass(ConfigurableClassInitialization.java:130)
+	at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.maybeInitializeHosted(ConfigurableClassInitialization.java:158)
+	at com.oracle.svm.hosted.SVMHost.registerType(SVMHost.java:198)
+	at com.oracle.graal.pointsto.meta.AnalysisUniverse.createType(AnalysisUniverse.java:264)
+	at com.oracle.graal.pointsto.meta.AnalysisUniverse.lookupAllowUnresolved(AnalysisUniverse.java:205)
+	at com.oracle.graal.pointsto.meta.AnalysisUniverse.lookup(AnalysisUniverse.java:182)
+	at com.oracle.graal.pointsto.meta.AnalysisUniverse.lookup(AnalysisUniverse.java:75)
+	at com.oracle.graal.pointsto.infrastructure.UniverseMetaAccess$1.apply(UniverseMetaAccess.java:52)
+	at com.oracle.graal.pointsto.infrastructure.UniverseMetaAccess$1.apply(UniverseMetaAccess.java:49)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at com.oracle.graal.pointsto.infrastructure.UniverseMetaAccess.lookupJavaType(UniverseMetaAccess.java:84)
+	at com.oracle.graal.pointsto.meta.AnalysisMetaAccess.lookupJavaType(AnalysisMetaAccess.java:47)
+	at com.oracle.svm.hosted.ameta.HostedDynamicHubFeature.replace(HostedDynamicHubFeature.java:52)
+	at com.oracle.graal.pointsto.meta.AnalysisUniverse.replaceObject(AnalysisUniverse.java:534)
+	at com.oracle.svm.hosted.ameta.AnalysisConstantReflectionProvider.replaceObject(AnalysisConstantReflectionProvider.java:201)
+	at com.oracle.svm.hosted.ameta.AnalysisConstantReflectionProvider.interceptValue(AnalysisConstantReflectionProvider.java:172)
+	at com.oracle.svm.hosted.ameta.AnalysisConstantReflectionProvider.readValue(AnalysisConstantReflectionProvider.java:101)
+	at com.oracle.svm.hosted.ameta.AnalysisConstantReflectionProvider.readFieldValue(AnalysisConstantReflectionProvider.java:77)
+	at com.oracle.graal.pointsto.ObjectScanner.scanField(ObjectScanner.java:184)
+	at com.oracle.graal.pointsto.ObjectScanner.doScan(ObjectScanner.java:380)
+	at com.oracle.graal.pointsto.ObjectScanner.access$500(ObjectScanner.java:61)
+	at com.oracle.graal.pointsto.ObjectScanner$3$1.run(ObjectScanner.java:450)
+	at com.oracle.graal.pointsto.util.CompletionExecutor.lambda$execute$0(CompletionExecutor.java:171)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+16:36:58.456 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+16:36:58.456 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+16:36:58.700 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 13744734208 bytes (maybe)
+16:36:58.701 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: /var/folders/pm/tlg5p5nx4vj3s05h4rfsv3t40000gn/T (java.io.tmpdir)
+16:36:58.701 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+16:36:58.702 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+16:36:58.702 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+16:36:58.703 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+16:36:58.703 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+16:36:58.704 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+16:36:58.704 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+16:36:58.705 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.NetUtil - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+16:36:58.706 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+16:36:58.708 [ForkJoinPool-2-worker-3] DEBUG reactor.util.Loggers$LoggerFactory - Using Slf4j logging framework
+16:37:43.127 [ForkJoinPool-4-worker-3] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+16:37:43.127 [ForkJoinPool-4-worker-3] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+16:37:44.137 [ForkJoinPool-4-worker-3] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+16:37:44.138 [ForkJoinPool-4-worker-3] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+16:38:34.452 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+16:38:34.453 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+16:38:34.453 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+16:38:34.453 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+Warning: class initialization of class io.netty.util.internal.logging.Log4JLogger failed with exception java.lang.NoClassDefFoundError: org/apache/log4j/Priority. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=io.netty.util.internal.logging.Log4JLogger to explicitly request delayed initialization of this class.
+16:38:35.504 [ForkJoinPool-2-worker-7] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+16:38:35.504 [ForkJoinPool-2-worker-7] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+16:38:36.720 [ForkJoinPool-2-worker-5] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 57034 (auto-detected)
+16:38:36.723 [ForkJoinPool-2-worker-5] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 18:65:90:ff:fe:cf:81:59 (auto-detected)
+Warning: class initialization of class reactor.netty.channel.MicrometerChannelMetricsRecorder failed with exception java.lang.NoClassDefFoundError: io/micrometer/core/instrument/MeterRegistry. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=reactor.netty.channel.MicrometerChannelMetricsRecorder to explicitly request delayed initialization of this class.
+Warning: class initialization of class reactor.netty.channel.ByteBufAllocatorMetrics failed with exception java.lang.NoClassDefFoundError: io/micrometer/core/instrument/MeterRegistry. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=reactor.netty.channel.ByteBufAllocatorMetrics to explicitly request delayed initialization of this class.
+16:38:51.209 [ForkJoinPool-2-worker-1] DEBUG reactor.netty.resources.DefaultLoopKQueue - Default KQueue support : false
+16:38:51.211 [ForkJoinPool-2-worker-1] DEBUG reactor.netty.resources.DefaultLoopEpoll - Default Epoll support : false
+16:38:51.227 [ForkJoinPool-2-worker-1] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+16:38:52.266 [ForkJoinPool-2-worker-3] DEBUG io.netty.handler.ssl.OpenSsl - netty-tcnative not in the classpath; OpenSslEngine will be unavailable.
+16:38:52.367 [ForkJoinPool-2-worker-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+16:38:52.367 [ForkJoinPool-2-worker-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+16:38:52.368 [ForkJoinPool-2-worker-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6b77abee
+16:39:04.666 [ForkJoinPool-2-worker-3] DEBUG io.netty.buffer.AdvancedLeakAwareByteBuf - -Dio.netty.leakDetection.acquireAndReleaseOnly: false
+16:39:27.501 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+16:39:32.189 [ForkJoinPool-2-worker-5] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+16:39:32.189 [ForkJoinPool-2-worker-5] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+Warning: class initialization of class io.netty.handler.ssl.ReferenceCountedOpenSslContext failed with exception java.lang.NoClassDefFoundError: io/netty/internal/tcnative/SSLPrivateKeyMethod. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=io.netty.handler.ssl.ReferenceCountedOpenSslContext to explicitly request delayed initialization of this class.
+16:39:34.007 [ForkJoinPool-2-worker-7] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+16:39:34.007 [ForkJoinPool-2-worker-7] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+Warning: class initialization of class io.netty.handler.ssl.JdkNpnApplicationProtocolNegotiator failed with exception java.lang.NoClassDefFoundError: org/eclipse/jetty/npn/NextProtoNego$Provider. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=io.netty.handler.ssl.JdkNpnApplicationProtocolNegotiator to explicitly request delayed initialization of this class.
+16:40:06.310 [ForkJoinPool-2-worker-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@4eb874de
+Warning: class initialization of class io.netty.handler.ssl.ReferenceCountedOpenSslEngine failed with exception java.lang.NoClassDefFoundError: io/netty/internal/tcnative/SSL. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=io.netty.handler.ssl.ReferenceCountedOpenSslEngine to explicitly request delayed initialization of this class.
+Warning: class initialization of class io.netty.handler.ssl.ConscryptAlpnSslEngine failed with exception java.lang.NoClassDefFoundError: org/conscrypt/BufferAllocator. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=io.netty.handler.ssl.ConscryptAlpnSslEngine to explicitly request delayed initialization of this class.
+Warning: class initialization of class io.netty.handler.ssl.JettyAlpnSslEngine$ServerEngine failed with exception java.lang.NoClassDefFoundError: org/eclipse/jetty/alpn/ALPN$Provider. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=io.netty.handler.ssl.JettyAlpnSslEngine$ServerEngine to explicitly request delayed initialization of this class.
+Warning: class initialization of class io.netty.handler.ssl.JettyAlpnSslEngine$ClientEngine failed with exception java.lang.NoClassDefFoundError: org/eclipse/jetty/alpn/ALPN$Provider. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=io.netty.handler.ssl.JettyAlpnSslEngine$ClientEngine to explicitly request delayed initialization of this class.
+Warning: class initialization of class io.netty.handler.ssl.JettyNpnSslEngine failed with exception java.lang.NoClassDefFoundError: org/eclipse/jetty/npn/NextProtoNego$Provider. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=io.netty.handler.ssl.JettyNpnSslEngine to explicitly request delayed initialization of this class.
+Warning: class initialization of class reactor.netty.resources.PooledConnectionProviderMetrics failed with exception java.lang.NoClassDefFoundError: io/micrometer/core/instrument/MeterRegistry. This class will be initialized at run time because option --allow-incomplete-classpath is used for image building. Use the option --initialize-at-run-time=reactor.netty.resources.PooledConnectionProviderMetrics to explicitly request delayed initialization of this class.
+[webflux-netty:57034]   (typeflow): 444,892.80 ms
+[webflux-netty:57034]    (objects): 208,940.18 ms
+[webflux-netty:57034]   (features):  19,674.09 ms
+[webflux-netty:57034]     analysis: 691,322.59 ms
+Error: Unsupported features in 4 methods
+Detailed message:
+Error: Detected a started Thread in the image heap. Threads running in the image generator are no longer running at image run time.  Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked. The object was probably created by a class initializer and is reachable from a static field. You can request class initialization at image run time by using the option --initialize-at-build-time=<class-name>. Or you can write your own initialization methods and call them explicitly from your main entry point.
+Trace: Object was reached by 
+	reading field sun.java2d.opengl.OGLRenderQueue$QueueFlusher.thread of
+		constant sun.java2d.opengl.OGLRenderQueue$QueueFlusher@56b09b09 reached by 
+	reading field sun.java2d.opengl.OGLRenderQueue.flusher of
+		constant sun.java2d.opengl.OGLRenderQueue@37e77a40 reached by 
+	reading field sun.java2d.opengl.OGLRenderQueue.theInstance
+Error: No instances of java.io.FilePermission are allowed in the image heap as this class should be initialized at image runtime. Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked.
+Trace: Object was reached by 
+	reading field java.util.concurrent.ConcurrentHashMap$Node.val of
+		constant java.util.concurrent.ConcurrentHashMap$Node@b731aed reached by 
+	indexing into array
+		constant java.util.concurrent.ConcurrentHashMap$Node[]@192b177d reached by 
+	reading field java.util.concurrent.ConcurrentHashMap.table of
+		constant java.util.concurrent.ConcurrentHashMap@b731aed reached by 
+	reading field java.io.FilePermissionCollection.perms of
+		constant java.io.FilePermissionCollection@2c3652bf reached by 
+	reading field java.util.concurrent.ConcurrentHashMap$Node.val of
+		constant java.util.concurrent.ConcurrentHashMap$Node@6fa90982 reached by 
+	indexing into array
+		constant java.util.concurrent.ConcurrentHashMap$Node[]@72d854d6 reached by 
+	reading field java.util.concurrent.ConcurrentHashMap.table of
+		constant java.util.concurrent.ConcurrentHashMap@d2f649a5 reached by 
+	reading field java.security.Permissions.permsMap of
+		constant java.security.Permissions@248aa32d reached by 
+	reading field java.security.ProtectionDomain.permissions of
+		constant java.security.ProtectionDomain@5197848c reached by 
+	indexing into array
+		constant java.security.ProtectionDomain[]@3202b7a2 reached by 
+	reading field java.security.AccessControlContext.context of
+		constant java.security.AccessControlContext@69c04506 reached by 
+	reading field java.util.HashMap$Node.value of
+		constant java.util.HashMap$Node@1a7b10ad reached by 
+	indexing into array
+		constant java.util.HashMap$Node[]@320199fa reached by 
+	reading field java.util.HashMap.table of
+		constant java.util.HashMap@33df652d reached by 
+	reading field javax.imageio.spi.SubRegistry.accMap of
+		constant javax.imageio.spi.SubRegistry@3f9ef19d reached by 
+	reading field java.util.HashMap$Node.value of
+		constant java.util.HashMap$Node@ccb9061 reached by 
+	indexing into array
+		constant java.util.HashMap$Node[]@50cfbd68 reached by 
+	reading field java.util.HashMap.table of
+		constant java.util.HashMap@456ff8c8 reached by 
+	reading field javax.imageio.spi.ServiceRegistry.categoryMap of
+		constant javax.imageio.spi.IIORegistry@47bbae0e reached by 
+	scanning method javax.imageio.ImageIO$ImageReaderIterator.next(ImageIO.java:536)
+Call path from entry point to javax.imageio.ImageIO$ImageReaderIterator.next(): 
+	at javax.imageio.ImageIO$ImageReaderIterator.next(ImageIO.java:529)
+	at javax.imageio.ImageIO$ImageReaderIterator.next(ImageIO.java:516)
+	at reactor.core.publisher.FluxCombineLatest.subscribe(FluxCombineLatest.java:131)
+	at com.oracle.svm.reflect.Flux_subscribe_1ddc4d8057a055132f7457ab8706168279d6739e_3644.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:345)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:285)
+	at com.oracle.svm.jni.functions.JNIFunctions.ExceptionDescribe(JNIFunctions.java:749)
+	at com.oracle.svm.core.code.IsolateEnterStub.JNIFunctions_ExceptionDescribe_b5412f7570bccae90b000bc37855f00408b2ad73(generated:0)
+Error: No instances of java.net.Inet6Address are allowed in the image heap as this class should be initialized at image runtime. Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked.
+Trace: Object was reached by 
+	reading field java.net.InetSocketAddress$InetSocketAddressHolder.addr of
+		constant java.net.InetSocketAddress$InetSocketAddressHolder@2eed reached by 
+	reading field java.net.InetSocketAddress.holder of
+		constant java.net.InetSocketAddress@2eed reached by 
+	reading field io.netty.bootstrap.Bootstrap.remoteAddress of
+		constant io.netty.bootstrap.Bootstrap@603c539d reached by 
+	scanning method reactor.netty.tcp.TcpClient.configure(TcpClient.java:165)
+Call path from entry point to reactor.netty.tcp.TcpClient.configure(): 
+	at reactor.netty.tcp.TcpClient.configure(TcpClient.java:165)
+	at reactor.netty.tcp.TcpClientBootstrap.configure(TcpClientBootstrap.java:39)
+	at reactor.netty.tcp.TcpClient.connect(TcpClient.java:181)
+	at reactor.netty.http.client.HttpClientFinalizer.connect(HttpClientFinalizer.java:68)
+	at reactor.netty.http.client.HttpClientFinalizer.responseConnection(HttpClientFinalizer.java:85)
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.connect(ReactorClientHttpConnector.java:111)
+	at com.oracle.svm.reflect.ClientHttpConnector_connect_dbad6ec79603589c440853ec3bbfe289937ede18_1660.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:345)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:285)
+	at com.oracle.svm.jni.functions.JNIFunctions.ExceptionDescribe(JNIFunctions.java:749)
+	at com.oracle.svm.core.code.IsolateEnterStub.JNIFunctions_ExceptionDescribe_b5412f7570bccae90b000bc37855f00408b2ad73(generated:0)
+Error: com.oracle.graal.pointsto.constraints.UnsupportedFeatureException: No instances of java.net.Inet6Address are allowed in the image heap as this class should be initialized at image runtime. Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked.
+Trace: 
+	at parsing reactor.netty.tcp.TcpUtils._updatePort(TcpUtils.java:84)
+Call path from entry point to reactor.netty.tcp.TcpUtils._updatePort(SocketAddress, int): 
+	at reactor.netty.tcp.TcpUtils._updatePort(TcpUtils.java:83)
+	at reactor.netty.tcp.TcpUtils.updatePort(TcpUtils.java:75)
+	at reactor.netty.tcp.TcpClient.lambda$port$5(TcpClient.java:394)
+	at reactor.netty.tcp.TcpClient$$Lambda$516/0x000000084137bc40.apply(Unknown Source)
+	at sun.security.ec.XECParameters$1.get(XECParameters.java:183)
+	at com.oracle.svm.core.jdk.SystemPropertiesSupport.initializeLazyValue(SystemPropertiesSupport.java:188)
+	at com.oracle.svm.core.jdk.SystemPropertiesSupport.getProperty(SystemPropertiesSupport.java:141)
+	at com.oracle.svm.core.jdk.Target_java_lang_System.getProperty(JavaLangSubstitutions.java:339)
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST:Ljava_lang_System_2_0002egetProperty_00028Ljava_lang_String_2_00029Ljava_lang_String_2(generated:0)
+
+com.oracle.svm.core.util.UserError$UserException: Unsupported features in 4 methods
+Detailed message:
+Error: Detected a started Thread in the image heap. Threads running in the image generator are no longer running at image run time.  Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked. The object was probably created by a class initializer and is reachable from a static field. You can request class initialization at image run time by using the option --initialize-at-build-time=<class-name>. Or you can write your own initialization methods and call them explicitly from your main entry point.
+Trace: Object was reached by 
+	reading field sun.java2d.opengl.OGLRenderQueue$QueueFlusher.thread of
+		constant sun.java2d.opengl.OGLRenderQueue$QueueFlusher@56b09b09 reached by 
+	reading field sun.java2d.opengl.OGLRenderQueue.flusher of
+		constant sun.java2d.opengl.OGLRenderQueue@37e77a40 reached by 
+	reading field sun.java2d.opengl.OGLRenderQueue.theInstance
+Error: No instances of java.io.FilePermission are allowed in the image heap as this class should be initialized at image runtime. Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked.
+Trace: Object was reached by 
+	reading field java.util.concurrent.ConcurrentHashMap$Node.val of
+		constant java.util.concurrent.ConcurrentHashMap$Node@b731aed reached by 
+	indexing into array
+		constant java.util.concurrent.ConcurrentHashMap$Node[]@192b177d reached by 
+	reading field java.util.concurrent.ConcurrentHashMap.table of
+		constant java.util.concurrent.ConcurrentHashMap@b731aed reached by 
+	reading field java.io.FilePermissionCollection.perms of
+		constant java.io.FilePermissionCollection@2c3652bf reached by 
+	reading field java.util.concurrent.ConcurrentHashMap$Node.val of
+		constant java.util.concurrent.ConcurrentHashMap$Node@6fa90982 reached by 
+	indexing into array
+		constant java.util.concurrent.ConcurrentHashMap$Node[]@72d854d6 reached by 
+	reading field java.util.concurrent.ConcurrentHashMap.table of
+		constant java.util.concurrent.ConcurrentHashMap@d2f649a5 reached by 
+	reading field java.security.Permissions.permsMap of
+		constant java.security.Permissions@248aa32d reached by 
+	reading field java.security.ProtectionDomain.permissions of
+		constant java.security.ProtectionDomain@5197848c reached by 
+	indexing into array
+		constant java.security.ProtectionDomain[]@3202b7a2 reached by 
+	reading field java.security.AccessControlContext.context of
+		constant java.security.AccessControlContext@69c04506 reached by 
+	reading field java.util.HashMap$Node.value of
+		constant java.util.HashMap$Node@1a7b10ad reached by 
+	indexing into array
+		constant java.util.HashMap$Node[]@320199fa reached by 
+	reading field java.util.HashMap.table of
+		constant java.util.HashMap@33df652d reached by 
+	reading field javax.imageio.spi.SubRegistry.accMap of
+		constant javax.imageio.spi.SubRegistry@3f9ef19d reached by 
+	reading field java.util.HashMap$Node.value of
+		constant java.util.HashMap$Node@ccb9061 reached by 
+	indexing into array
+		constant java.util.HashMap$Node[]@50cfbd68 reached by 
+	reading field java.util.HashMap.table of
+		constant java.util.HashMap@456ff8c8 reached by 
+	reading field javax.imageio.spi.ServiceRegistry.categoryMap of
+		constant javax.imageio.spi.IIORegistry@47bbae0e reached by 
+	scanning method javax.imageio.ImageIO$ImageReaderIterator.next(ImageIO.java:536)
+Call path from entry point to javax.imageio.ImageIO$ImageReaderIterator.next(): 
+	at javax.imageio.ImageIO$ImageReaderIterator.next(ImageIO.java:529)
+	at javax.imageio.ImageIO$ImageReaderIterator.next(ImageIO.java:516)
+	at reactor.core.publisher.FluxCombineLatest.subscribe(FluxCombineLatest.java:131)
+	at com.oracle.svm.reflect.Flux_subscribe_1ddc4d8057a055132f7457ab8706168279d6739e_3644.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:345)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:285)
+	at com.oracle.svm.jni.functions.JNIFunctions.ExceptionDescribe(JNIFunctions.java:749)
+	at com.oracle.svm.core.code.IsolateEnterStub.JNIFunctions_ExceptionDescribe_b5412f7570bccae90b000bc37855f00408b2ad73(generated:0)
+Error: No instances of java.net.Inet6Address are allowed in the image heap as this class should be initialized at image runtime. Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked.
+Trace: Object was reached by 
+	reading field java.net.InetSocketAddress$InetSocketAddressHolder.addr of
+		constant java.net.InetSocketAddress$InetSocketAddressHolder@2eed reached by 
+	reading field java.net.InetSocketAddress.holder of
+		constant java.net.InetSocketAddress@2eed reached by 
+	reading field io.netty.bootstrap.Bootstrap.remoteAddress of
+		constant io.netty.bootstrap.Bootstrap@603c539d reached by 
+	scanning method reactor.netty.tcp.TcpClient.configure(TcpClient.java:165)
+Call path from entry point to reactor.netty.tcp.TcpClient.configure(): 
+	at reactor.netty.tcp.TcpClient.configure(TcpClient.java:165)
+	at reactor.netty.tcp.TcpClientBootstrap.configure(TcpClientBootstrap.java:39)
+	at reactor.netty.tcp.TcpClient.connect(TcpClient.java:181)
+	at reactor.netty.http.client.HttpClientFinalizer.connect(HttpClientFinalizer.java:68)
+	at reactor.netty.http.client.HttpClientFinalizer.responseConnection(HttpClientFinalizer.java:85)
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.connect(ReactorClientHttpConnector.java:111)
+	at com.oracle.svm.reflect.ClientHttpConnector_connect_dbad6ec79603589c440853ec3bbfe289937ede18_1660.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:345)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:285)
+	at com.oracle.svm.jni.functions.JNIFunctions.ExceptionDescribe(JNIFunctions.java:749)
+	at com.oracle.svm.core.code.IsolateEnterStub.JNIFunctions_ExceptionDescribe_b5412f7570bccae90b000bc37855f00408b2ad73(generated:0)
+Error: com.oracle.graal.pointsto.constraints.UnsupportedFeatureException: No instances of java.net.Inet6Address are allowed in the image heap as this class should be initialized at image runtime. Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked.
+Trace: 
+	at parsing reactor.netty.tcp.TcpUtils._updatePort(TcpUtils.java:84)
+Call path from entry point to reactor.netty.tcp.TcpUtils._updatePort(SocketAddress, int): 
+	at reactor.netty.tcp.TcpUtils._updatePort(TcpUtils.java:83)
+	at reactor.netty.tcp.TcpUtils.updatePort(TcpUtils.java:75)
+	at reactor.netty.tcp.TcpClient.lambda$port$5(TcpClient.java:394)
+	at reactor.netty.tcp.TcpClient$$Lambda$516/0x000000084137bc40.apply(Unknown Source)
+	at sun.security.ec.XECParameters$1.get(XECParameters.java:183)
+	at com.oracle.svm.core.jdk.SystemPropertiesSupport.initializeLazyValue(SystemPropertiesSupport.java:188)
+	at com.oracle.svm.core.jdk.SystemPropertiesSupport.getProperty(SystemPropertiesSupport.java:141)
+	at com.oracle.svm.core.jdk.Target_java_lang_System.getProperty(JavaLangSubstitutions.java:339)
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST:Ljava_lang_System_2_0002egetProperty_00028Ljava_lang_String_2_00029Ljava_lang_String_2(generated:0)
+
+	at com.oracle.svm.core.util.UserError.abort(UserError.java:75)
+	at com.oracle.svm.hosted.FallbackFeature.reportAsFallback(FallbackFeature.java:221)
+	at com.oracle.svm.hosted.NativeImageGenerator.runPointsToAnalysis(NativeImageGenerator.java:736)
+	at com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:530)
+	at com.oracle.svm.hosted.NativeImageGenerator.lambda$run$0(NativeImageGenerator.java:445)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1407)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+Caused by: com.oracle.graal.pointsto.constraints.UnsupportedFeatureException: Unsupported features in 4 methods
+Detailed message:
+Error: Detected a started Thread in the image heap. Threads running in the image generator are no longer running at image run time.  Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked. The object was probably created by a class initializer and is reachable from a static field. You can request class initialization at image run time by using the option --initialize-at-build-time=<class-name>. Or you can write your own initialization methods and call them explicitly from your main entry point.
+Trace: Object was reached by 
+	reading field sun.java2d.opengl.OGLRenderQueue$QueueFlusher.thread of
+		constant sun.java2d.opengl.OGLRenderQueue$QueueFlusher@56b09b09 reached by 
+	reading field sun.java2d.opengl.OGLRenderQueue.flusher of
+		constant sun.java2d.opengl.OGLRenderQueue@37e77a40 reached by 
+	reading field sun.java2d.opengl.OGLRenderQueue.theInstance
+Error: No instances of java.io.FilePermission are allowed in the image heap as this class should be initialized at image runtime. Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked.
+Trace: Object was reached by 
+	reading field java.util.concurrent.ConcurrentHashMap$Node.val of
+		constant java.util.concurrent.ConcurrentHashMap$Node@b731aed reached by 
+	indexing into array
+		constant java.util.concurrent.ConcurrentHashMap$Node[]@192b177d reached by 
+	reading field java.util.concurrent.ConcurrentHashMap.table of
+		constant java.util.concurrent.ConcurrentHashMap@b731aed reached by 
+	reading field java.io.FilePermissionCollection.perms of
+		constant java.io.FilePermissionCollection@2c3652bf reached by 
+	reading field java.util.concurrent.ConcurrentHashMap$Node.val of
+		constant java.util.concurrent.ConcurrentHashMap$Node@6fa90982 reached by 
+	indexing into array
+		constant java.util.concurrent.ConcurrentHashMap$Node[]@72d854d6 reached by 
+	reading field java.util.concurrent.ConcurrentHashMap.table of
+		constant java.util.concurrent.ConcurrentHashMap@d2f649a5 reached by 
+	reading field java.security.Permissions.permsMap of
+		constant java.security.Permissions@248aa32d reached by 
+	reading field java.security.ProtectionDomain.permissions of
+		constant java.security.ProtectionDomain@5197848c reached by 
+	indexing into array
+		constant java.security.ProtectionDomain[]@3202b7a2 reached by 
+	reading field java.security.AccessControlContext.context of
+		constant java.security.AccessControlContext@69c04506 reached by 
+	reading field java.util.HashMap$Node.value of
+		constant java.util.HashMap$Node@1a7b10ad reached by 
+	indexing into array
+		constant java.util.HashMap$Node[]@320199fa reached by 
+	reading field java.util.HashMap.table of
+		constant java.util.HashMap@33df652d reached by 
+	reading field javax.imageio.spi.SubRegistry.accMap of
+		constant javax.imageio.spi.SubRegistry@3f9ef19d reached by 
+	reading field java.util.HashMap$Node.value of
+		constant java.util.HashMap$Node@ccb9061 reached by 
+	indexing into array
+		constant java.util.HashMap$Node[]@50cfbd68 reached by 
+	reading field java.util.HashMap.table of
+		constant java.util.HashMap@456ff8c8 reached by 
+	reading field javax.imageio.spi.ServiceRegistry.categoryMap of
+		constant javax.imageio.spi.IIORegistry@47bbae0e reached by 
+	scanning method javax.imageio.ImageIO$ImageReaderIterator.next(ImageIO.java:536)
+Call path from entry point to javax.imageio.ImageIO$ImageReaderIterator.next(): 
+	at javax.imageio.ImageIO$ImageReaderIterator.next(ImageIO.java:529)
+	at javax.imageio.ImageIO$ImageReaderIterator.next(ImageIO.java:516)
+	at reactor.core.publisher.FluxCombineLatest.subscribe(FluxCombineLatest.java:131)
+	at com.oracle.svm.reflect.Flux_subscribe_1ddc4d8057a055132f7457ab8706168279d6739e_3644.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:345)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:285)
+	at com.oracle.svm.jni.functions.JNIFunctions.ExceptionDescribe(JNIFunctions.java:749)
+	at com.oracle.svm.core.code.IsolateEnterStub.JNIFunctions_ExceptionDescribe_b5412f7570bccae90b000bc37855f00408b2ad73(generated:0)
+Error: No instances of java.net.Inet6Address are allowed in the image heap as this class should be initialized at image runtime. Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked.
+Trace: Object was reached by 
+	reading field java.net.InetSocketAddress$InetSocketAddressHolder.addr of
+		constant java.net.InetSocketAddress$InetSocketAddressHolder@2eed reached by 
+	reading field java.net.InetSocketAddress.holder of
+		constant java.net.InetSocketAddress@2eed reached by 
+	reading field io.netty.bootstrap.Bootstrap.remoteAddress of
+		constant io.netty.bootstrap.Bootstrap@603c539d reached by 
+	scanning method reactor.netty.tcp.TcpClient.configure(TcpClient.java:165)
+Call path from entry point to reactor.netty.tcp.TcpClient.configure(): 
+	at reactor.netty.tcp.TcpClient.configure(TcpClient.java:165)
+	at reactor.netty.tcp.TcpClientBootstrap.configure(TcpClientBootstrap.java:39)
+	at reactor.netty.tcp.TcpClient.connect(TcpClient.java:181)
+	at reactor.netty.http.client.HttpClientFinalizer.connect(HttpClientFinalizer.java:68)
+	at reactor.netty.http.client.HttpClientFinalizer.responseConnection(HttpClientFinalizer.java:85)
+	at org.springframework.http.client.reactive.ReactorClientHttpConnector.connect(ReactorClientHttpConnector.java:111)
+	at com.oracle.svm.reflect.ClientHttpConnector_connect_dbad6ec79603589c440853ec3bbfe289937ede18_1660.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:345)
+	at javax.xml.transform.TransformerException.printStackTrace(TransformerException.java:285)
+	at com.oracle.svm.jni.functions.JNIFunctions.ExceptionDescribe(JNIFunctions.java:749)
+	at com.oracle.svm.core.code.IsolateEnterStub.JNIFunctions_ExceptionDescribe_b5412f7570bccae90b000bc37855f00408b2ad73(generated:0)
+Error: com.oracle.graal.pointsto.constraints.UnsupportedFeatureException: No instances of java.net.Inet6Address are allowed in the image heap as this class should be initialized at image runtime. Object has been initialized without the native-image initialization instrumentation and the stack trace can't be tracked.
+Trace: 
+	at parsing reactor.netty.tcp.TcpUtils._updatePort(TcpUtils.java:84)
+Call path from entry point to reactor.netty.tcp.TcpUtils._updatePort(SocketAddress, int): 
+	at reactor.netty.tcp.TcpUtils._updatePort(TcpUtils.java:83)
+	at reactor.netty.tcp.TcpUtils.updatePort(TcpUtils.java:75)
+	at reactor.netty.tcp.TcpClient.lambda$port$5(TcpClient.java:394)
+	at reactor.netty.tcp.TcpClient$$Lambda$516/0x000000084137bc40.apply(Unknown Source)
+	at sun.security.ec.XECParameters$1.get(XECParameters.java:183)
+	at com.oracle.svm.core.jdk.SystemPropertiesSupport.initializeLazyValue(SystemPropertiesSupport.java:188)
+	at com.oracle.svm.core.jdk.SystemPropertiesSupport.getProperty(SystemPropertiesSupport.java:141)
+	at com.oracle.svm.core.jdk.Target_java_lang_System.getProperty(JavaLangSubstitutions.java:339)
+	at com.oracle.svm.jni.JNIJavaCallWrappers.jniInvoke_VA_LIST:Ljava_lang_System_2_0002egetProperty_00028Ljava_lang_String_2_00029Ljava_lang_String_2(generated:0)
+
+	at com.oracle.graal.pointsto.constraints.UnsupportedFeatures.report(UnsupportedFeatures.java:129)
+	at com.oracle.svm.hosted.NativeImageGenerator.runPointsToAnalysis(NativeImageGenerator.java:733)
+	... 8 more
+Error: Image build request failed with exit status 1
+com.oracle.svm.driver.NativeImage$NativeImageError: Image build request failed with exit status 1
+	at com.oracle.svm.driver.NativeImage.showError(NativeImage.java:1480)
+	at com.oracle.svm.driver.NativeImage.build(NativeImage.java:1258)
+	at com.oracle.svm.driver.NativeImage.performBuild(NativeImage.java:1220)
+	at com.oracle.svm.driver.NativeImage.main(NativeImage.java:1179)
+	at com.oracle.svm.driver.NativeImage$JDK9Plus.main(NativeImage.java:1663)
+mv: rename webflux-netty to ../../../webflux-netty: No such file or directory
+
+
+Compiled app (webflux-netty)
+./compile.sh: line 41: ./webflux-netty: No such file or directory
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
