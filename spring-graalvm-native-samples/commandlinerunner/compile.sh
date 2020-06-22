@@ -12,7 +12,7 @@ rm -rf target
 mkdir -p target/native-image
 
 echo "Packaging $ARTIFACT with Maven"
-mvn -ntp package > target/native-image/output.txt
+mvn package > target/native-image/output.txt
 
 JAR="$ARTIFACT-$VERSION.jar"
 rm -f $ARTIFACT
@@ -27,12 +27,13 @@ CP=BOOT-INF/classes:$LIBPATH
 GRAALVM_VERSION=`native-image --version`
 echo "Compiling $ARTIFACT with $GRAALVM_VERSION"
 { time native-image \
+  --static \
   --verbose \
   -H:Name=$ARTIFACT \
   -Dspring.native.remove-xml-support=true \
   -Dspring.native.remove-spel-support=true \
   -Dspring.native.remove-jmx-support=true \
-  -cp $CP $MAINCLASS >> output.txt ; } 2>> output.txt
+  -cp $CP $MAINCLASS ;  }
 
 if [[ -f $ARTIFACT ]]
 then
