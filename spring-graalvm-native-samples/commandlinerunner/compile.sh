@@ -28,11 +28,7 @@ GRAALVM_VERSION=`native-image --version`
 echo "Compiling $ARTIFACT with $GRAALVM_VERSION"
 { time native-image \
   --verbose \
-  --static \
-  -H:ForceDynamicLinking=pthread,dl,rt \
-  -H:NativeLinkerOption=-static-libstdc++ \
-  -H:NativeLinkerOption=-static-libgcc \
-  -H:TempDirectory=/tmp/native-image \
+   -H:+StaticExecutableWithDynamicLibC \
   -H:Name=$ARTIFACT \
   -Dspring.native.remove-xml-support=true \
   -Dspring.native.remove-spel-support=true \
