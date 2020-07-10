@@ -26,8 +26,10 @@ CP=BOOT-INF/classes:$LIBPATH
 
 GRAALVM_VERSION=`native-image --version`
 echo "Compiling $ARTIFACT with $GRAALVM_VERSION"
+   #--enable-all-security-services \
 { time native-image \
   --verbose \
+   -H:TempDirectory=/tmp/native-image \
    -H:+StaticExecutableWithDynamicLibC \
   -H:Name=$ARTIFACT \
   -Dspring.native.remove-xml-support=true \
